@@ -1,0 +1,2 @@
+(this["webpackJsonpsearch-picture-project"]=this["webpackJsonpsearch-picture-project"]||[]).push([[0],{9:function(e,c,r){"use strict";r.r(c);r(0);var t=r(3),n=r.n(t),s=r(1),i=function(){return Object(s.jsx)("div",{children:"React Pic Search"})};n.a.render(Object(s.jsx)(i,{}),document.querySelector("#root"))}},[[9,1,2]]]);
+//# sourceMappingURL=main.fa601faf.chunk.js.map
