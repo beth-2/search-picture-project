@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Typography, CssBaseline } from "@material-ui/core";
 import PanoramaIcon from '@material-ui/icons/Panorama';
+import SearchBar from './SearchBar'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <PanoramaIcon style={{fontSize: 40, padding: 5}}/>
         React Pic Search
       </Typography>
+      <SearchBar/>
       </Container>
     </>
   );
