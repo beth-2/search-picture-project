@@ -28,19 +28,23 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const SearchBar = () => {
-    const[state, setState] = useState('')
+const SearchBar = ({gonder}) => {
+  const [state, setState] = useState('');
   const classes = useStyles();
 
-  console.log(`state: `, state)
+
+  const onFormSubmit = (event) => {
+      event.preventDefault();
+      gonder(state);
+  };
 
   return (
-    <Paper component="form" onSubmit={()=>{}} className={classes.root}>
+    <Paper component="form" onSubmit={onFormSubmit} className={classes.root}>
       <InputBase 
       className={classes.input} 
       placeholder="Search"
-      onChange={(e)=>setState(e.target.value)}
-      value = {state}
+      value={state}
+      onChange={(e) => setState(e.target.value)}
        />
 
       <Divider className={classes.divider} orientation="vertical" />
