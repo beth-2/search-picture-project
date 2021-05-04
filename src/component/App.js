@@ -4,6 +4,7 @@ import PanoramaIcon from "@material-ui/icons/Panorama";
 import SearchBar from "./SearchBar";
 import axios from "axios";
 import ImageList from "./ImageList";
+import ImageCard from "./ImageCard";
 
 const App = () => {
   const [images, setImages] = useState([]);
@@ -27,6 +28,7 @@ const App = () => {
           React Pic Search
         </Typography>
         <SearchBar gonder={onSearchSubmit} />
+        <hr/>
         <ImageList images={images} />
       </Container>
     </>

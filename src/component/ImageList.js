@@ -1,5 +1,6 @@
 import React from "react";
 import ImageCard from "./ImageCard";
+import './ImageList.css';
 
 const ImageList = ({ images }) => {
   const resimler = images.map((image) => {
@@ -12,7 +13,7 @@ const ImageList = ({ images }) => {
     );
   });
 
-  return <div>{resimler}</div>;
+  return <div className="image-list">{resimler}</div>;
 };
 
 export default ImageList;
